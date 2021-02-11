@@ -1,0 +1,152 @@
+body{
+  background-color: #000;
+  overflow: hidden;
+}
+h1{
+  width: 200px;
+  position: relative;
+  font-size: 40px;
+  font-family: Helvetica;
+  color:#F2F3F7;
+}
+main{
+  background-color: black;
+  margin: auto;
+  width: 1000px;
+  height: 850px
+}
+#queen{
+  margin-left: 40%;
+  padding-top: 20px;
+  text-align: center
+}
+#nano, #mayor{
+  margin-left: 80%;
+  text-align: right;
+  padding-right: 40px;
+  padding-top: 20px;
+}
+#king, #minor, #eggs{
+  padding-left: 40px;
+  padding-top: 100px;
+}
+
+
+
+.queen{
+  fill:#fff;
+  position: absolute;
+  top: 10%;
+  left:30%;
+  height: 80%;
+}
+
+.king{
+  fill: rgba(0,0,0,0);
+  position: absolute;
+  top: 20%;
+  left:31%;
+  height: 80%;
+}
+
+.mayor{
+  fill: rgba(255,0,0,0);
+  position: absolute;
+  top: 20%;
+  left:29.75%;
+  height: 80%;
+}
+
+.minor{
+  fill: rgba(0,255,0,0);
+  position: absolute;
+  top: 20%;
+  left:29.75%;
+  height: 80%;
+}
+
+.nano{
+  fill: rgba(0,0,255,0);
+  position: absolute;
+  top: 20%;
+  left:29.75%;
+  height: 80%;
+}
+
+.eggs{
+  fill: rgba(125,125,125,0);
+  position: absolute;
+  top: 20%;
+  left:29.75%;
+  height: 80%;
+}
+
+
+.rood1{
+  fill: rgba(92,0,17,0.8);
+}
+.rood2{
+  fill: rgba(168,7,26,0.8);
+}
+.rood3{
+  fill: rgba(245,34,45,0.8);
+}
+.rood4{
+  fill: rgba(250,84,28,0.8);
+}
+.rood5{
+  fill: rgba(255,192,105,0.8);
+}
+
+
+#Layer_1{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  stroke:white;
+  stroke-width: 3px;
+  stroke-linecap: round ;
+  stroke-dasharray: 15;
+  animation: dash 8s linear;
+  animation-iteration-count: infinite;
+}
+#Layer_2{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  stroke:white;
+  stroke-width: 1px;
+  stroke-linecap: round ;
+  stroke-dasharray: 8;
+  animation: dash 6s linear;
+  animation-iteration-count: infinite;
+}
+#Layer_3{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  stroke-width: 2px;
+  stroke-linecap: round ;
+  stroke:white;
+  stroke-dasharray: 10;
+  animation: dash 8s linear;
+  animation-iteration-count: infinite;
+}
+#Layer_4{
+  position: absolute;
+  fill: none;
+  top: 50% ;
+  left: 50%;
+  stroke-width: 5px;
+  stroke-linecap: round ;
+  stroke:white;
+  stroke-dasharray: 20;
+  animation: dash 10s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -1000;
+  }
+}
